@@ -20,20 +20,21 @@ header {
 	display: flex;
 	display: -webkit-flex;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 14px;
 }
 header #back_img {
-	
+	vertical-align: bottom;
 }
 header span{
 	display: inline-block;
 	width: 80%;
 	text-align: center;
 	color: #595757;
-	vertical-align: baseline;
+	vertical-align: bottom;
 	font-size: 1.4rem;
 }
 header #items_img {
+	vertical-align: bottom;
 }
 /*logo*/
 #logo_part {
@@ -45,8 +46,9 @@ header #items_img {
 }
 #logo_part img {
 	display: block;
-	width: 25%;
-	margin:0 auto;
+	width: 30%;
+	margin:20px auto 10px;
+
 }
 /*输入区域*/
 #ipt_part {
@@ -54,31 +56,30 @@ header #items_img {
 	color: #595757;
 	width: 70%;	
 }
-#ipt_part img {
-	width: 8%;
+.ipt_right {
+	width: 10%;
+}
+.ipt_left {
+	width: 8%
 }
 #ipt_part input {
 	color: #898989;
-	font-size: 140%;
+	font-size: 130%;
 	vertical-align: bottom;
 	padding: 3px 0px;
 }
 #ipt_user {
 	margin: 40px 0px;
 }
-#ipt_user #user {
+.ipt_area {
 	border: none;   /*去掉边框*/
 	outline: none;
-	width: 80%;
+	width: 76%;
 }
 #ipt_password {
 	margin: 40px 0px;
 }
-#ipt_password #password {
-	border: none;
-	outline: none;
-	width: 80%;
-}
+
 /*login button*/
 #login {
 	width: 70%;
@@ -91,9 +92,30 @@ header #items_img {
 	margin-top:20px;
 }
 footer {
-	margin-top:70px;
+	margin-top:80px;
 }
 footer a {
 	color: #898989;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+	#logo_part img {
+		width: 17%;
+	}
+	.ipt_right {
+		width: 5%;
+	}
+	.ipt_left {
+		width: 4%;
+	}
+	.ipt_area {
+		width: 88%
+	}
+	#login {
+		width: 60%;
+	}
+	#ipt_part{
+		width: 60%;
+	}
 }
