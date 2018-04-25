@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>种子管家账号登录</title>
+	<meta charset="utf-8">
+	<meta content=" height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			var user = document.getElementById("user");
+			var password = document.getElementById("password");
+			user.onclick = function(){
+				this.value = "";
+			}
+			password.onclick = function(){
+				this.value = "";
+			}
+		}
+	</script>
+</head>
+<body>
+<div id = "container">
+	<!-- 顶部区域 -->
+	<header>
+		<a href=""><img src="images/back.png" id = "back_img"></a>
+		<span>账户登录</span>
+		<a href=""><img src="images/items.png" id = "items_img"></a>
+	</header>
+	<!-- logo -->
+	<div id = "logo_part">
+		<img src="images/logo.png">
+		<div>种子管家账号登录</div>
+	</div>
+	<!-- 输入区 -->
+	<form id = "ipt_part" method="get">
+		<!-- 输入账号 -->
+		<div id = "ipt_user">
+			<img src="images/user.png">
+			<input type="text" name="user" id = "user" value="请输入您的账号">
+			<img src="images/delete.png" onclick="clear()" style="width: 6%;">
+			<hr>
+		</div>
+		<!-- 输入密码 -->
+		<div id = "ipt_password">
+			<img src="images/password.png">
+			<input type="password" name="user" id = "password" value="请输入您的密码" onclick="clear()">
+			<img src="images/eye.png" style="width: 6%;">
+			<hr>
+		</div>
+	</form>
+	<a href="" id = "login"><img src="images/login.png" onclick=""></a>
+	<a href="" id = "forget_password">忘记密码？</a>
+	<!-- 底部 -->
+	<footer><a href="">账号挂失，请联系我们 &gt;</a></footer>
+</div>
+
+</body>
+</html>
