@@ -1,0 +1,90 @@
+/*布局*/
+#container{
+	width: 90vw;
+	max-width: 960px;
+}
+div{
+	width: 86vw;
+	max-width: 900px;
+	padding:2vh 0;
+	border-bottom: 1px solid #eee;
+}
+.right {
+	float: right;
+	color: #989898;
+}
+#type_seed {
+	margin-top: 3vh;
+}
+/*种子详情*/
+#detail_seed {
+	display: block;
+	width: 86vw;
+	max-width: 900px;
+	background-color: #eee;
+	color: #898989;
+	text-align: left;
+}
+#detail_wrap {
+	background-color: #eee;
+	padding: 2vw;
+}
+/*输入*/
+input {
+	border: none;
+	outline: none;
+	color: #595757;
+	text-align: right;  /*让输入框中的文字右对齐*/
+}
+textarea {
+	display: block;
+	width: 86vw;
+	max-width: 900px;
+	border:none;
+	outline: none;
+	resize: none;
+	background-color: #eee;
+	color: #898989;
+	height: 15vh;
+	padding:2vw;
+}
+/*选项*/
+ul{
+	width: 86vw;
+	max-width: 900px;
+	list-style: none;
+	display: none;
+	padding:0px;
+	margin:0px;
+}
+li {
+	background-color: #eee;
+	margin-bottom: 2vw;
+}
+/*按钮*/
+#button {
+	background-color: #fd6252;
+	color: #fff;
+	height: 6vh;
+	text-align: center;
+	border-radius: 2vw;
+	line-height: 6vh;
+	margin-top: 3vh;
+}
+a {
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+#type_seed, #people, #time, li{
+	cursor: pointer;
+}
+/*日期*/
+#timer input {
+	width: 10vw;
+}
+@media screen and (min-width: 960px) {
+	#button {
+		height: 60px;
+		line-height: 60px;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>种种子咯</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/种种子咯.css">
+	<meta content=" height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<script type="text/javascript" src = "js/种种子咯.js" defer></script>
+</head>
+<body>
+<div id = "container">
+	<header>
+		<a href="积分管理.html"><img src="images/back.png" id = "back_img"></a>
+		<span>种种子咯</span>
+		<a href=""><img src="images/items.png" id = "items_img"></a>
+	</header>
+	<!-- 种子类型 -->
+	<div id = "type_seed" onclick = "select.call(this)">
+		种子类型<span class="right">任务性-金种子&gt;</span>
+	</div>
+	<ul id = "type"　>
+		<li class="option">临时性加分</li>
+		<li class="option">临时性扣分</li>
+	</ul>
+	<!-- 种子详情 -->
+	<div id = "detail_wrap"><input type="text" id="detail_seed" value = "种子详情"></div>
+	<!-- 种子数额 -->
+	<div id = "num_seed">
+		种子数额<input type="text" id = "num" class="right" value="种子请填写整数">
+	</div>
+	<!-- 种子事件 -->
+	<div id = "things_seed">
+		种子事件<input type="text" id = "things" class="right" value="请简要填写">
+	</div>
+
+	<!-- 通知人 -->
+	<div id = "people" onclick = "select.call(this)">通知人<span class="right">请选择&gt;</span>
+	</div>
+	<ul>
+		<li class="option">张总监</li>
+		<li class="option">李总监</li>
+	</ul>
+	<!-- 申请事件 -->
+	<div id = "time">
+		申请时间<span class="right" id = "timer"><input type="text" id = "year">年<input type="text" id = "month">月<input type="text" id = "day">日</span>	
+	</div>
+
+	<!-- 事件描述 -->
+	<div id = "describe">事件描述</div>
+	<textarea id = "des">请详细描述事项</textarea>
+	<!-- 种下按钮 -->
+	<a href="种子福田.html"><div id = "button">立即种下</div></a>
+</div>
+</body>
+</html>

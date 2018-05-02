@@ -1,0 +1,29 @@
+#seed_solid {
+	width: 80vw;
+	max-width: 860px;
+	color: #fff;
+	padding: 4vw;
+	background-color: #fd6252;
+	margin-top: 3vh;
+}
+#seed_solid #sco_seed {
+	font: 1.8rem "黑体" ;
+}
+#items {
+	width: 80vw;
+	max-width: 860px;
+	margin: 2vh;
+}
+.item {
+	padding: 14px 0;
+	border-bottom: 1px solid #eee;
+}
+.right {
+	float: right;
+	color: #fd6252;
+}
+@media screen and (min-width: 960px) {
+	#seed_solid {
+		padding: 40px;
+	}
+}

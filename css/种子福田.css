@@ -1,0 +1,103 @@
+/*导航栏*/
+#nav {
+	width: 86vw;
+	max-width: 900px;
+	margin-top: 4vh; 
+	color: #aaa;
+}
+/*默认第一个是红色*/
+#nav>:first-child {
+	color: #fd6252;
+}
+#nav .item {
+	display: inline-block;
+	width: 20vw;
+	max-width: 200px;
+	text-align: center;
+	cursor: pointer;
+}
+/*分隔的竖线*/
+#nav .ver_line {
+	display: inline-block;
+	width: 2px;
+	height: 16px;
+	background-color: #eee;
+}
+/*包裹的内容区域*/
+#wrapper {
+	width: 80vw;
+	max-width: 850px;
+	position: relative;
+	margin-top: 11px;
+}
+#wrapper #time_line {
+	position: absolute;
+	height: 80vh;
+	width: 2px;
+	background-color: #eee;
+	margin-left: 11px;
+}
+/*圆点和时间*/
+.timeWrap {
+	position: relative;
+	margin-bottom: 15px;
+}
+.dot1 {
+	position: absolute;
+	border-radius: 12px;
+	border:12px solid #eee;
+	margin-left: px;
+	margin-top: -2px;
+}
+.dot2 {
+	position: absolute;
+	border-radius: 8px;
+	border: 8px solid #fff;
+	margin-left: 4px;
+	margin-top: 2px;
+}
+.dot3 {
+	position: absolute;
+	border-radius: 4px;
+	border: 4px solid #eee;
+	margin-left: 8px;
+	margin-top: 6px;
+}
+.timer {
+	margin-left: 35px;
+}
+/*信息框*/
+.thingsWrap {
+	width: 63vw;
+	height: 9vh;
+	background-color: #f7f8f8;
+	margin-left: 40px;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	text-align: right;
+}
+.left {
+	float: left;
+}
+.thingsWrap img {
+	width: 20px;
+	cursor: pointer;
+}
+@media screen and (min-width: 960px) {
+	.thingsWrap {
+		height: 90px;
+		width: 50vw;
+	}
+}
+/*已审核*/
+#check {
+	display: none
+}
+/*已复审*/
+#check_again {
+	display: none
+}
+/*已作废*/
+#cancel {
+	display: none
+}
